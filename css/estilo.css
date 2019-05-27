@@ -3,48 +3,68 @@ body {
     color: #d6edf3;
     font-family: "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
 }
-
-#id_pc1 {
-    height: 10vw;
-    position: relative;
-    padding-top: 20vw;
-}
-
-#id_pc2 {
-    height: 10vw;
-    padding-left: 40vw;
-    padding-top: 20vw;
-}
-
-#id_satelite {
-    height: 8vw;
-    padding: 2, 2;
-}
-
-#id_rj {
-    height: 1vw;
-    padding: 2, 2;
-}
-
-#id_coaxial {
-    height: 2vw;
-    padding: 2, 2;
-}
-
-#id_optica {
-    height: 5vw;
-    padding: 2, 2;
-}
-
-#id_router {
-    height: 8vw;
-    padding: 2, 2;
+*{
+    margin: 0;
+    padding: 0;
 }
 
 #cont_ambiente {
     height: 30vw;
 }
 
+#id_pc1 {
+    height: 10vw;
+    float: left;
+    padding-top: 20vw;
+}
+
+#id_pc2 {
+    height: 10vw;
+    float: right;
+    padding-top: 20vw;
+}
+
+
 #cont_rede div {
     display: inline-block;
+}
+#id_satelite {
+    height: 8vw;
+    width: 15vw;
+  
+}
+
+#id_rj {
+    height: 1vw;
+    width: 20vw;
+   
+}
+
+#id_coaxial {
+    height: 2vw;
+    width: 20vw;
+}
+
+#id_optica {
+    height: 5vw;
+    width: 20vw;
+}
+
+#id_router {
+    height: 8vw;
+    width: 15vw;
+}
+
+.cl_nova_img1{
+    height: 8vw;
+    width: 15vw;
+    padding-left: 20vw;
+    padding-top: 6vw;
+}
+
+.cl_nova_img2{
+    height: 5vw;
+    width: 55vw;
+    padding-left: 5vw;
+    padding-top: 25vw;
 }
