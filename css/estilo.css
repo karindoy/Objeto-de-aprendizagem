@@ -55,16 +55,23 @@ body {
     width: 15vw;
 }
 
-.cl_nova_img1{
+#id_nova_img1{
     height: 8vw;
     width: 15vw;
     padding-left: 20vw;
     padding-top: 6vw;
 }
 
-.cl_nova_img2{
+#id_nova_img2{
     height: 5vw;
     width: 55vw;
     padding-left: 5vw;
     padding-top: 25vw;
+}
+#id_imgPacote{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    padding-left: 80px;
+    padding-top: 140px;
 }
