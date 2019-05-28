@@ -70,23 +70,60 @@ function clickaimagem(imagem) {
 }
 
 function StartPacket() {
-    var divAnime = document.getElementById("id_Anime1");
-    var imgPacote = document.createElement("img");
-    imgPacote.src = "img/dado.png";
-    var id_imgPacote = document.createAttribute("id");
-    id_imgPacote.value = "id_imgPacote";
-    imgPacote.setAttributeNode(id_imgPacote);
-    divAnime.appendChild(imgPacote);
 
-    var x = 5;
-    var anime = setInterval(function () {
-        var imgCaralho = document.getElementById("id_imgPacote");
-        x++;
-        if (x === 65) {
-            clearInterval(anime);
-        }
-        imgCaralho.style.paddingLeft = x + '%';
-    }, 100);
-    //clearInterval(anime);
+
+
+
+    if (document.getElementById('id_nova_img1') !== null) {
+
+        var divAnime = document.getElementById("id_Anime1");
+        var imgPacote = document.createElement("img");
+        imgPacote.src = "img/dado.png";
+        var id_imgPacote = document.createAttribute("id");
+        id_imgPacote.value = "id_imgPacote";
+        imgPacote.setAttributeNode(id_imgPacote);
+        divAnime.appendChild(imgPacote);
+        var x = 5;
+        
+        var imagemRede =document.getElementById('id_nova_img1');
+        var srcimagem= 'img/satelite.png';
+        var sourcerede = location.href.replace('index.html', srcimagem);
+        if(imagemRede.src== sourcerede)
+        var anime = setInterval(function () {
+            var imgCaralho = document.getElementById("id_imgPacote");
+            x++;
+            if (x === 65) {
+                clearInterval(anime);
+            }
+            imgCaralho.style.paddingLeft = x + '%';
+            imgCaralho.style.paddingTop = x + '%';
+        }, 100);
+    }
+
+    if (document.getElementById('id_nova_img2') !== null) {
+        var divAnime = document.getElementById("id_Anime2");
+        var imgPacote = document.createElement("img");
+        imgPacote.src = "img/dado.png";
+        var id_imgPacote = document.createAttribute("id");
+        id_imgPacote.value = "id_imgPacote";
+        imgPacote.setAttributeNode(id_imgPacote);
+        divAnime.appendChild(imgPacote);
+        var x = 5;
+
+        var imagemRede =document.getElementById('id_nova_img2');
+        var srcimagem= 'img/satelite.png';
+        var sourcerede = location.href.replace('index.html', srcimagem);
+        if(imagemRede.src== sourcerede)
+        var anime = setInterval(function () {
+            var imgCaralho = document.getElementById("id_imgPacote");
+            x++;
+            if (x === 65) {
+                clearInterval(anime);
+            }
+            imgCaralho.style.paddingLeft = x + '%';
+        }, 100);
+    }
+
     
+
 }
