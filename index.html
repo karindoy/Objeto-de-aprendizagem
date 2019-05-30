@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title> redes</title>
     <script src="js/init.js"></script>
     <link rel="stylesheet" href="css/estilo.css">
@@ -20,7 +20,7 @@
                 <img src="img/satelite.png" id="id_satelite" onclick="clickaimagem(this)" />
             </div>
             <div>
-                <img src="img/rj.jpg" id="id_rj" onclick="clickaimagem(this) " />
+                <img src="img/rj.png" id="id_rj" onclick="clickaimagem(this) " />
             </div>
             <div>
                 <img src="img/coaxial.png" id="id_coaxial" onclick="clickaimagem(this) " />
@@ -31,9 +31,13 @@
             <div>
                 <img src="img/router.png" id="id_router" onclick="clickaimagem(this) " />
             </div>
+
         </div>
 
-        <button id="btn_iniciar" onclick="StartPacket()" > Iniciar</button>
+        <div id="button">
+            <input id="btnIniciar"type="button" onclick="StartPacket()" value="Iniciar">
+            <input type="button" onclick="recarrega()" value="Resetar">
+        </div>
     </div>
 </body>
 
