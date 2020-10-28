@@ -9,34 +9,23 @@
 </head>
 
 <body>
+    <h2 class="titulo">Simulador de pacote de dados no meio físico</h2>
     <div id="cont_body">
         <div id="cont_ambiente">
+			<div class="textos">
+					<p>Instruções:</p>
+					<p>1. Selecione um tipo de equipamento de transmissão de dados</p>
+					<p>2. Clique em iniciar para enviar o pacote até o destino</p>
+					<p>3. Compare as velicidade de transmissão de dados em cada um dos equipamentos</p>
+			</div>
             <img src="img/pc.png" id="id_pc1">
             <img src="img/pc.png" id="id_pc2">
-        </div>
-
-        <div id="cont_rede">
-            <div>
-                <img src="img/satelite.png" id="id_satelite" onclick="clickaimagem(this)" />
-            </div>
-            <div>
-                <img src="img/rj.png" id="id_rj" onclick="clickaimagem(this) " />
-            </div>
-            <div>
-                <img src="img/coaxial.png" id="id_coaxial" onclick="clickaimagem(this) " />
-            </div>
-            <div>
-                <img src="img/optica.png" id="id_optica" onclick="clickaimagem(this) " />
-            </div>
-            <div>
-                <img src="img/router.png" id="id_router" onclick="clickaimagem(this) " />
-            </div>
-
+			<img id="pacote_inicial" src="img/dado.png" onclick="window.location.href='https://youtu.be/otCpCn0l4Wo?t=18'">
+			<p id="nao_toque">não toque nos dados</p>
         </div>
 
         <div id="button">
-            <input id="btnIniciar"type="button" onclick="StartPacket()" value="Iniciar">
-            <input type="button" onclick="recarrega()" value="Resetar">
+            <input id="btnIniciar"type="button" onclick="redirecionar()" value="Iniciar">
         </div>
     </div>
 </body>

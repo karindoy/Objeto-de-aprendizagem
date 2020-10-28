@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title> redes</title>
+    <script src="js/init.js"></script>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <h2 class="titulo">Simulador de pacote de dados no meio físico</h2>
+    <div id="cont_body">
+        <div id="cont_ambiente">
+            <img src="img/pc.png" id="id_pc1">
+            <img src="img/pc.png" id="id_pc2">
+        </div>
+
+        <div id="cont_rede">
+            <div>
+                <img src="img/satelite.png" id="id_satelite" onclick="clickaimagem(this)" />
+            </div>
+            <div>
+                <img src="img/rj.png" id="id_rj" onclick="clickaimagem(this) " />
+            </div>
+            <div class="divrede">
+                <img src="img/coaxial.png" id="id_coaxial" onclick="clickaimagem(this) " />
+            </div>
+            <div class="divoptica">
+                <img src="img/optica.png" id="id_optica" onclick="clickaimagem(this) " />
+            </div>
+            <div>
+                <img src="img/router.png" id="id_router" onclick="clickaimagem(this) " />
+            </div>
+
+        </div>
+
+        <div id="cont_legenda">
+            <h3> Satélite</h3>
+            <h3> Cabo RJ</h3>
+            <h3> Cabo coaxial</h3>
+            <h3> Fibra ótica</h3>
+            <h3>Router</h3>
+        </div>
+
+        <div id="button">
+            <input id="btnIniciar"type="button" onclick="StartPacket()" value="Iniciar">
+            <input type="button" onclick="redirecionar()" value="Resetar">
+        </div>
+    </div>
+</body>
+
+</html>

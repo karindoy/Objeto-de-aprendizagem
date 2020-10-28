@@ -1,8 +1,8 @@
-var sourcesatelite = location.href.replace('index.html', 'img/satelite.png');
-var sourcerouter = location.href.replace('index.html', 'img/router.png');
-var sourcerj = location.href.replace('index.html', 'img/rj.png');
-var sourcecoaxial = location.href.replace('index.html', 'img/coaxial.png');
-var sourceoptica = location.href.replace('index.html', 'img/optica.png');
+var sourcesatelite = location.href.replace('sim_pacotededados.html', 'img/satelite.png');
+var sourcerouter = location.href.replace('sim_pacotededados.html', 'img/router.png');
+var sourcerj = location.href.replace('sim_pacotededados.html', 'img/rj.png');
+var sourcecoaxial = location.href.replace('sim_pacotededados.html', 'img/coaxial.png');
+var sourceoptica = location.href.replace('sim_pacotededados.html', 'img/optica.png');
 var anime = setInterval(function () {
     console.log();
 }, 1000000);
@@ -58,110 +58,110 @@ function clickaimagem(imagem) {
 
 }
 
+function redirecionar() {
+	  window.location.href="sim_pacotededados.html";
+}
 function StartPacket() {
     resetaDado();
     clearInterval(anime);
     clearInterval(anime2);
     if (document.getElementById('id_newsatelite') !== null) {
 
-        var x = 0;
+        var x = 5;
         anime = setInterval(function () {
-            x = x + 2;
+            x = x + 0.2;
 
-            var y = 270;
-            var y1 = 80;
-            if (x >270) {
+            var y = 20;
+            var y1 = 3;
+            if (x >20) {
              clearInterval(anime);
 
              anime2 = setInterval(function () {
-                y = y + 5;
-                y1 = y1 + 5;
-                if (y > 500) {
+                y = y + 0.2;
+                y1 = y1 + 0.2;
+                if (y > 40) {
                     clearInterval(anime2);
                 }
-                document.getElementById("id_imgPacote").style.paddingLeft = (y + y) + 'px';
-                document.getElementById("id_imgPacote").style.paddingTop = y1 + 'px';
+                document.getElementById("id_imgPacote").style.paddingLeft = (y + y) + 'vw';
+                document.getElementById("id_imgPacote").style.paddingTop = y1 + 'vw';
             }, 100);
          }
 
-         document.getElementById("id_imgPacote").style.paddingLeft = (x + x) + 'px';
-         document.getElementById("id_imgPacote").style.paddingTop = (350 - x) + 'px';
+         document.getElementById("id_imgPacote").style.paddingLeft = (x + x) + 'vw';
+         document.getElementById("id_imgPacote").style.paddingTop = (25 - x) + 'vw';
      }, 100);
 
     }
 
     if (document.getElementById('id_newrouter') !== null) {
-        var x = 0;
+        var x = 5;
         anime = setInterval(function () {
-            x = x + 2;
+            x = x + 0.4;
 
-            var y = 270;
-            var y1 = 80;
-            if (x> 270) {
+            var y = 20;
+            var y1 = 3;
+            if (x> 20) {
                 clearInterval(anime);
 
                anime2 = setInterval(function () {
-                    y = y + 5;
-                    y1 = y1 + 5;
-                    if (y > 500) {
+                    y = y + 0.4;
+                    y1 = y1 + 0.4;
+                    if (y > 40) {
                         clearInterval(anime2);
                     }
 
-                    document.getElementById("id_imgPacote").style.paddingLeft = (y + y) + 'px';
-                    document.getElementById("id_imgPacote").style.paddingTop = y1 + 'px';
+                    document.getElementById("id_imgPacote").style.paddingLeft = (y + y) + 'vw';
+                    document.getElementById("id_imgPacote").style.paddingTop = y1 + 'vw';
                 }, 100);
             }
 
-            document.getElementById("id_imgPacote").style.paddingLeft = (x + x) + 'px';
-            document.getElementById("id_imgPacote").style.paddingTop = (350 - x) + 'px';
+            document.getElementById("id_imgPacote").style.paddingLeft = (x + x) + 'vw';
+            document.getElementById("id_imgPacote").style.paddingTop = (25 - x) + 'vw';
         }, 100);
     }
 
     if (document.getElementById('id_newrj') !== null) {
 
-        var x = 50;
+        var x = 5;
        anime = setInterval(function () {
-            x = x + 5;
+            x = x + 0.5;
 
-            if (x > 600) {
+            if (x > 44) {
                 clearInterval(anime);
             }
 
-            document.getElementById("id_imgPacote").style.paddingLeft = (x + x) + 'px';
+            document.getElementById("id_imgPacote").style.paddingLeft = (x + x) + 'vw';
         }, 100);
     }
 
     if (document.getElementById('id_newcoaxial') !== null) {
 
-        var x = 50;
+        var x = 0.5;
         anime = setInterval(function () {
-            x = x + 10;
+            x = x + 1.0;
 
-            if (x > 600) {
+            if (x > 44) {
                 clearInterval(anime);
             }
 
-            document.getElementById("id_imgPacote").style.paddingLeft = (x + x) + 'px';
+            document.getElementById("id_imgPacote").style.paddingLeft = (x + x) + 'vw';
         }, 100);
     }
 
     if (document.getElementById('id_newoptica') !== null) {
-        var x=50;
+        var x=5;
         anime = setInterval(function () {
-            x = x + 20;
+            x = x + 2.0;
 
-            if (x > 600) {
+            if (x > 44) {
                 clearInterval(anime);
             }
 
-            document.getElementById("id_imgPacote").style.paddingLeft = (x + x) + 'px';
+            document.getElementById("id_imgPacote").style.paddingLeft = (x + x) + 'vw';
         }, 100);
     }
 }
 
-function recarrega(){
-    window.location.href="index.html";
-}
 
 function resetaDado(){
     var pacote =  document.getElementById("id_imgPacote");
@@ -178,7 +178,7 @@ function resetaDado(){
     imgPacote.setAttributeNode(id_imgPacote);
     cont_ambiente.appendChild(imgPacote);
 
-    document.getElementById("id_imgPacote").style.paddingLeft = 20 + 'px';
-    document.getElementById("id_imgPacote").style.paddingTop = 330 + 'px';
+    document.getElementById("id_imgPacote").style.paddingLeft = 5 + 'vw';
+    document.getElementById("id_imgPacote").style.paddingTop = 24 + 'vw';
 
 }

@@ -1,18 +1,45 @@
 body {
     background-color: #281c57;
-    color: #d6edf3;
+    color: #eff2f3;
     font-family: "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
 }
 *{
     margin: 0;
     padding: 0;
 }
+#cont_body{
+    padding: 2vw;
 
-#cont_ambiente {
-    height: 30vw;
-    
+}
+.titulo{
+    text-align: center;
 }
 
+.textos{
+	position: absolute;
+	
+}
+#nao_toque{
+	position:absolute;
+	padding-top:29.5vw; 	
+	padding-left:35vw;
+	font-size: 0.5vw;
+	color: #c2e0ff;
+}
+#cont_ambiente {
+    height: 30vw;
+    background-color: #86a4b3;
+    border:2px solid #c2e0ec;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#pacote_inicial{
+	position: absolute;
+	padding-left: 30vw;
+	padding-top: 8vw;
+	width: 30vw;
+	
+}
 
 #id_pc1 {
     position: absolute;
@@ -28,27 +55,46 @@ body {
     float: right;
     padding-top: 20vw;
 }
-
+#cont_rede{
+    background-color: #86a4b3;
+    border:2px solid #c2e0ec;
+    margin-top: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
 
 #cont_rede div {
     display: inline-block;
-    padding-left: 5px;
-    padding-top: 5px; 
+    border:1px solid #000000;
+    border-radius: 4px;
+    align-content: center;
+    margin: 2px;
+    
+}
+.divrede{
+    padding-top: 3.5vw;
+    padding-bottom: 3.5vw;
+}
+
+.divoptica{
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
 }
 #id_satelite {
     height: 8vw;
     width: 15vw;
-  
+    box-sizing: border-box;
 }
 
 #id_rj {
-    height: 1vw;
-    width: 20vw;
+    height: 8vw;
+    width: 15vw;
    
 }
 
 #id_coaxial {
-    height: 2vw;
+    height: 1vw;
     width: 20vw;
 }
 
@@ -80,32 +126,32 @@ body {
 
 #id_newrj{
     position: absolute;
-    height: 5vw;
-    width: 55vw;
-    padding-left: 22vw;
-    padding-top: 25vw;
+    height: 20vw;
+    width: 65vw;
+    padding-left: 15vw;
+    padding-top: 10vw;
 }
 #id_newcoaxial{
     position: absolute;
     height: 5vw;
-    width: 55vw;
-    padding-left: 22vw;
-    padding-top: 25vw;
+    width: 65vw;
+    padding-left: 15vw;
+    padding-top: 23vw;
 }
 
 #id_newoptica{
     position: absolute;
     height: 5vw;
-    width: 55vw;
-    padding-left: 22vw;
-    padding-top: 25vw;
+    width: 65vw;
+    padding-left: 15vw;
+    padding-top: 23vw;
 }
 #id_imgPacote{
     position: absolute;
     height: 35px;
     width: 35px;
-    padding-left: 20px;
-    padding-top: 100px;
+    padding-left: 5vw;
+    padding-top: 20vw;
 }
 
 #button input{
@@ -118,7 +164,21 @@ body {
 	font-family:Arial;
 	font-size:15px;
     padding:9px 23px;
+    margin-top: 1vw;
 }
 #btnIniciar{
     margin-left: 40%;
 }
+
+#cont_legenda{
+    background-color: #7e8d94;
+    border:2px solid #c2e0ec;
+    margin-top: 0.5vw;
+    display: flex;
+}
+#cont_legenda h3{
+    margin-left:5.5vw;
+    margin-right:5.5vw;
+}
+
+
